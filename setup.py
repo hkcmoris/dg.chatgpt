@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dg_chatgpt',
-    version='1.0',
+    version='1.1',
     description='wrapper for OpenAI chatgpt API, using `gpt-3.5-turbo` model',
     url='https://github.com/hkcmoris/dg_chatgpt',
     author='Ondřej Moravec',
