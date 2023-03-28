@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "dg_chatgpt"
 version = "0.1.4"
@@ -21,10 +25,6 @@ dependencies = [
     "python-dotenv",
     "requests"
 ]
-
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
 
 [project.urls]
 "Homepage" = "https://github.com/hkcmoris/dg_chatgpt"
