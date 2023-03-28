@@ -81,5 +81,5 @@ class Conversation:
     def log(self):
         """Log the conversation to a file."""
         path = os.path.join("chat_logs", f"{self.user_id}.json")
-        with open(path, "w") as f:
-            json.dump(self.messages, f)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(self.messages, f, ensure_ascii=False, indent=4)
