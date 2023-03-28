@@ -47,7 +47,7 @@ class Conversation:
             logging.warning(warning)
             return None
 
-        if message["role"] != "user" or message["role"] != "system":
+        if message["role"] != "user" and message["role"] != "system":
             warning = 'Role must be `user` or `system`.'
             logging.warning(warning)
             return None
