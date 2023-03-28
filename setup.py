@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='DevGround.cz - chatGPT module',
+    name='dg_chatgpt',
     version='1.0',
-    scripts=['chatgpt.py'],
+    # scripts=['chatgpt.py'],
     packages=find_packages()
 )
