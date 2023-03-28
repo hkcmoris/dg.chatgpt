@@ -1,11 +1,11 @@
 [project]
-name = "dg_riegrova_webAPI"
-version = "0.0.1"
+name = "dg_chatgpt"
+version = "0.1.4"
 authors = [{
     name = "Ondřej Moravec",
     email = "moravec@devground.cz"
 }]
-description = "Web API for http://www.skolka-riegrova.cz/"
+description = "Wrapper for OpenAI API, intended to be used for a discord bot powered by chatGPT."
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -14,13 +14,12 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
-    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+    "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 dependencies = [
-    "beautifulsoup4",
-    "MechanicalSoup",
+    "openai",
+    "python-dotenv",
+    "requests"
 ]
 
 [build-system]
@@ -28,6 +27,5 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project.urls]
-"Homepage" = "https://github.com/ondrej-moravec/dg_riegrova_webAPI"
-"Bugtracker" = "https://github.com/ondrej-moravec/dg_riegrova_webAPI/issues"
-"Web" = "https://www.skolka-riegrova.cz/"
+"Homepage" = "https://github.com/hkcmoris/dg_chatgpt"
+"Bugtracker" = "https://github.com/hkcmoris/dg_chatgpt/issues"
