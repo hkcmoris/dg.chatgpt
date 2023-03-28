@@ -1,3 +1,33 @@
+[project]
+name = "dg_riegrova_webAPI"
+version = "0.0.1"
+authors = [{
+    name = "Ondřej Moravec",
+    email = "moravec@devground.cz"
+}]
+description = "Web API for http://www.skolka-riegrova.cz/"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+]
+dependencies = [
+    "beautifulsoup4",
+    "MechanicalSoup",
+]
+
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/ondrej-moravec/dg_riegrova_webAPI"
+"Bugtracker" = "https://github.com/ondrej-moravec/dg_riegrova_webAPI/issues"
+"Web" = "https://www.skolka-riegrova.cz/"

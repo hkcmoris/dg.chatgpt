@@ -47,7 +47,7 @@ class Conversation:
             logging.warning(warning)
             return None
 
-        if message["role"] != "user" or message["role"] != "system":
+        if message["role"] != "user" and message["role"] != "system":
             warning = 'Role must be `user` or `system`.'
             logging.warning(warning)
             return None
@@ -61,8 +61,9 @@ class Conversation:
         prompt = self.messages.copy()
         prompt.insert(0, self.intro_prompt)
         response = openai.ChatCompletion.create(
-            engine="gpt-3.5-turbo",
-            messages=self.messages
+            model="gpt-3.5-turbo",
+            messages=prompt,
+            user=self.user_id
         )
         self.messages.append(response)
 
