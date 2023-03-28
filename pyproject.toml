@@ -5,10 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dg_chatgpt"
 version = "0.1.4"
-authors = [{
-    name = "Ondřej Moravec",
-    email = "moravec@devground.cz"
-}]
+authors = [{name = "Ondřej Moravec", email = "moravec@devground.cz"}]
 description = "Wrapper for OpenAI API, intended to be used for a discord bot powered by chatGPT."
 readme = "README.md"
 requires-python = ">=3.7"
