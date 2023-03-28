@@ -65,7 +65,7 @@ class Conversation:
             messages=prompt,
             user=self.user_id
         )
-        self.messages.append(response)
+        self.messages.append(response.choices[0].message)
 
         if response.usage["total_tokens"] > 2048:
             info = f'OpenAI API usage nearing limit (tokens: {response.usage["total_tokens"]}). Clearing oldest message.'
